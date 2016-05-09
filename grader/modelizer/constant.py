@@ -1,6 +1,27 @@
 activity_weights = {
-    'reading': 7,
-    'learning': 10,
-    'guitar': 6,
-    'exercise': 8,
+    # activity name:(score per hour, ideal duration in hr)
+    'reading': {
+        'rate': 7,
+        'expected': 2
+    },
+    'learning': {
+        'rate': 10,
+        'expected': 2
+    },
+    'guitar': {
+        'rate': 6,
+        'expected': 1
+    },
+    'exercise': {
+        'rate': 8,
+        'expected': 1
+
+    },
 }
+
+activity_list = [
+    'reading',
+    'learning',
+    'guitar',
+    'exercise',
+]
