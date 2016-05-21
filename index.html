@@ -1,0 +1,22 @@
+<header>
+	<style type="text/css">
+		label{
+			display: inline-block;
+			width: 100px;
+			float: left;
+			clear: left;
+			}
+	</style>
+</header>
+
+<body>
+	<form action="http://127.0.0.1:8000/grade/" method="post">
+		<label>reading:</label>  <input type="number" name="reading" value="2"><br>
+		<label>exercise:</label> <input type="number" name="exercise" value="1"><br>
+		<label>learning:</label> <input type="number" name="learning" value="3"><br>
+		<label>guitar:</label>   <input type="number" name="guitar" value="2"><br/>
+	<div>
+		<label></label> <input type="submit" value="Calculate"/>
+	</div>
+	</form>
+</body>
