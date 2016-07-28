@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life Grader</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="item">
+		<span class="check-box">
+			<input type="checkbox" name="item" value="Get up before 8am">
+		</span>
+		<span class="weight">1</span>
+	</div>
+	<div id="sum">
+		<span>Total</span>
+		<span id="score"></span>
+	</div>
+	<div>
+		<span id="buttonCalculate">Calculate</span>
+		<span id="textSum"></span>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$("#buttonCalculate").on('click',function(){
+				var items = document.getElementsByClassName("item");
+				var i, total=0;
+				for (i = 0; i < items.length; i++) {
+					var weight = (items[i].getElementsByClassName("weight"))[0].text();
+					total += parseInt(weight);
+				}
+				$("#textSum").text(total);
+			});
+		});
+	</script>
+</body>
+</html>
